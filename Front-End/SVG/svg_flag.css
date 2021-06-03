@@ -1,0 +1,26 @@
+
+.d1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.stripe {
+  width: 225px;
+  height: 50px;
+}
+#saffron {
+  background: #FF9933;
+}
+#white {
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#green {
+  background: #138808;
+}
+#ashok_chakra {
+  height: 40px;
+  width: 40px;
+}
