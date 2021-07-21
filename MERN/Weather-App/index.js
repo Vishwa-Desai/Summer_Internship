@@ -9,20 +9,32 @@ const replaceVal=(tempVal,orgVal)=>{
     temperature=temperature.replace("{%tempmax%}",orgVal.main.temp_max);
     temperature=temperature.replace("{%location%}",orgVal.name);
     temperature=temperature.replace("{%country%}",orgVal.sys.country);
+    temperature=temperature.replace("{%tempstatus%}",orgVal.weather[0].main);
     return temperature;
 }
 
 const server=http.createServer((req,res)=>{
-    if(req.url==="/")
+    if(req.url=="/")
     {
         requests("http://api.openweathermap.org/data/2.5/weather?q=Ahmedabad&appid=b7a9df008ad6acf59cd8e9414348b884")
         .on('data', (chunk) => {
         const objdata=JSON.parse(chunk);
         const arrData=[objdata];
-         // console.log(arrData[0].main.temp);
-         const realTimeData=arrData.map((val) => replaceVal(homeFile,val)).join(""); // after this it will convert into html page (most important line)
-         //console.log(realTimeData);
+          console.log(arrData[0].main.temp);
+         const realTimeData=arrData.map((val) => replaceVal(homeFile,val)).join("");
+
+         // after this it will convert into html page (most important line)
+         fs.readFile(__dirname + './home.css', function (err, data) {
+            if (err) console.log(err);
+            res.writeHead(200, {'Content-Type': 'text/css'});
+            res.write(data);
+            
+          });
+        
          res.write(realTimeData);
+         //res.writeHead(200, { 'content-type': 'text/html' })
+
+         //replaceVal(homeFile,val);
         })
         .on('end', (err) => {
           if (err) return console.log('connection closed due to errors', err);
