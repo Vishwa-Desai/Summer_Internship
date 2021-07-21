@@ -1,0 +1,42 @@
+form {
+    display: flex;
+    margin-bottom: 10px;
+    /* border-top: 2px solid #D3D3D3; */
+    /* border-radius: 30px; */
+  }
+  
+  .input {
+    border: none;
+    padding: 2%;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 92%;
+    font-size: 1.2em;
+    border-radius: 50px;
+    background: #f0f1f3;
+
+  }
+  
+  input:focus, textarea:focus, select:focus{
+    outline: none;
+  }
+  
+  .sendButton {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-image: linear-gradient(to bottom, rgb(4, 67, 78), rgb(4, 107, 121));
+    background-image: linear-gradient(to bottom, rgb(53, 61, 177), rgb(233, 90, 233));
+
+
+    /* padding: 20px; */
+    display: inline-block;
+    border: none;
+    width: 6%;
+    border-radius: 100px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding-left:10px;
+    padding-top:5px;
+
+  }

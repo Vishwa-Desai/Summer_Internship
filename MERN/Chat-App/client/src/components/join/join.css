@@ -1,0 +1,114 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #root {
+    height: 100vh;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .joinOuterContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    /* background-color: #1A1A1D; */
+    /* background-image: linear-gradient(to bottom, rgb(53, 61, 177), rgb(233, 90, 233)); */
+    background: #26282e;
+
+
+  }
+  
+  .joinInnerContainer {
+    width: 30%;
+    height: 70%;
+    /* background-color: rgb(58, 58, 109);*/
+    background: rgba(255, 255, 255, 0.089);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-image: linear-gradient(to bottom, rgb(53, 61, 177), rgb(233, 90, 233));
+
+
+  }
+  
+  .joinInput {
+    border-radius: 0;
+    padding: 15px 20px;
+    width: 80%;
+    border-radius: 10px;
+    border:none;
+    color: rgb(39, 9, 65) !important;;
+    font-weight: 600;
+    font-size:15px;
+  }
+
+  .joinInput::placeholder{
+    color: rgb(39, 9, 65) !important;;
+    font-weight: 600;
+    font-size:15px;
+  }
+
+  .icon{
+      box-shadow: 0 10px 5px rgba(1, 1, 2, 0.3);
+  }
+  
+  .heading {
+    color: white;
+    font-size: 2.5em;
+    padding-bottom: 10px;
+    /* border-bottom: 2px solid white; */
+    margin-bottom: 80px;
+    text-shadow: 0 10px 5px rgba(1, 1, 2, 0.3);
+  }
+  
+  .button {
+      color: rgb(39, 9, 65);
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+      /* background: #2979FF; */
+      padding: 20px;
+      font-size:18px;
+      border-radius: 5px;
+      display: inline-block;
+      border: none;
+      width: 80%;
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  .mt-60 {
+    margin-top: 60px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .joinOuterContainer {
+      height: 100%;
+    }
+  
+    .joinInnerContainer {
+      width: 90%;
+    }
+  
+  
+  }
+  
+  button:focus {
+    outline: 0;
+  }

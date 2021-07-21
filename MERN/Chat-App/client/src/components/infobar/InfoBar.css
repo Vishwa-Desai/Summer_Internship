@@ -1,0 +1,33 @@
+.infoBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #2979FF; */
+    /* background-image: linear-gradient(to bottom, rgb(75, 48, 182), rgb(199, 93, 199)); */
+    background-image: linear-gradient(to bottom, rgb(53, 61, 177), rgb(233, 90, 233));
+
+    border-radius: 0px 30px 0 0;
+    height: 60px;
+    width: 100%;
+  }
+  
+  .leftInnerContainer {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    color: white;
+  }
+  
+  .rightInnerContainer {
+    display: flex;
+    flex: 0.5;
+    /* border:2px solid black; */
+    justify-content: flex-end;
+    margin-right:2%;
+  }
+  
+  .onlineIcon {
+    margin-right: 2%;
+  }
+  
