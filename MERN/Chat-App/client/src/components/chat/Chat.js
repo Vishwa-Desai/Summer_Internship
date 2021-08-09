@@ -16,7 +16,7 @@ const Chat=({location})=>{
     const [users, setUsers] = useState('');
     const [message,setMessage]=useState('');
     const [messages,setMessages]=useState([]);
-    const EndPoint='http://localhost:5000';
+    const EndPoint='https://chat--app-react.herokuapp.com/';
     //working data (msg user sent after joining)
     useEffect(()=>{
         const {name,room}=querystring.parse(location.search);
