@@ -4,8 +4,9 @@
 - Summer Internship-21
 - Course : Msc.IT
 - Guide : Prof. Lavneet Singh
+
 I have Learnt many topics of front-end development and React library. I have also done some hands on SVG ,media-query, Saas and try to use pure CSS and HTML in every project.
-For practice of all that concepts , I have created for mini projects.
+For practice of all that concepts , I have created four mini projects.
 
 **Project 1 :   To-Do app**
 This is a simple responsive To-Do App in React to manage daily tasks.
