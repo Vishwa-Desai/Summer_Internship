@@ -1,9 +1,9 @@
 # Summer_Internship
 
-#Vishva Desai 202012096
-#Summer Internship-21
-#Course : Msc.IT
-#Guide : Prof. Lavneet Singh
+- Vishva Desai 202012096
+- Summer Internship-21
+- Course : Msc.IT
+- Guide : Prof. Lavneet Singh
 I have Learnt many topics of front-end development and React library. I have also done some hands on SVG ,media-query, Saas and try to use pure CSS and HTML in every project.
 For practice of all that concepts , I have created for mini projects.
 Project 1 :   To-Do app (In React 18 and using pure HTML and CSS)
